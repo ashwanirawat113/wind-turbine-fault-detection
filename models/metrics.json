@@ -1,0 +1,52 @@
+{
+  "cv_accuracy_mean": 1.0,
+  "cv_accuracy_std": 0.0,
+  "cv_f1_mean": 1.0,
+  "cv_f1_std": 0.0,
+  "train_accuracy": 1.0,
+  "train_f1": 1.0,
+  "feature_importance": {
+    "top_mag_5": 0.0786,
+    "e_2shaft_norm": 0.0681,
+    "dom_freq": 0.0672,
+    "rms": 0.0632,
+    "variance": 0.0614,
+    "top_mag_1": 0.061,
+    "e_rotor_norm": 0.0585,
+    "e_shaft_norm": 0.0583,
+    "dom_mag": 0.0572,
+    "peak": 0.0517
+  },
+  "confusion_matrix": [
+    [
+      300,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      300,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      300,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      300
+    ]
+  ],
+  "class_names": [
+    "Normal",
+    "Blade_Imbalance",
+    "Bearing_Wear",
+    "Misalignment"
+  ]
+}
