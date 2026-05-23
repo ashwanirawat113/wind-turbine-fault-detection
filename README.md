@@ -1,10 +1,4 @@
-<<<<<<< HEAD
 # Wind Turbine Blade Fault Detection System
-
-**Ashwani Rawat | B.Tech ECE | SRM Institute of Science & Technology**  
-*Final Year Project — Nordex EDGE GET Application*
-
----
 
 ## Overview
 
@@ -80,29 +74,23 @@ Raw Vibration Signal (ADXL345 @ 1600 Hz)
 
 ## Quick Start
 
-### 1. Install dependencies
+**1. Install dependencies**
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2. Run full pipeline (data → train → visualize → demo)
+**2. Run full pipeline (data → train → visualize → demo)**
 ```bash
 python run_pipeline.py
 ```
 
-### 3. Run inference on a specific fault type
+**3. Run inference on a specific fault type**
 ```bash
 python src/predict.py --mode simulate --fault normal
 python src/predict.py --mode simulate --fault bearing
 python src/predict.py --mode simulate --fault imbalance
 python src/predict.py --mode simulate --fault misalignment
 ```
-
-### 4. Run on your own CSV signal
-```bash
-python src/predict.py --mode csv --file your_signal.csv
-```
-*(CSV must have a column named `signal` with 1600 samples at 1600 Hz)*
 
 ---
 
@@ -131,7 +119,7 @@ python src/predict.py --mode csv --file your_signal.csv
     Normal                13.0%  ███
     Blade_Imbalance        8.0%  ██
     Bearing_Wear          78.0%  ███████████████████████
-    Misalignment           1.0%  
+    Misalignment           1.0%
 ====================================================
 ```
 
@@ -139,15 +127,15 @@ python src/predict.py --mode csv --file your_signal.csv
 
 ## Technical Background
 
-### Why FFT for Fault Detection?
 Mechanical faults in rotating machinery produce characteristic frequency signatures:
 - **Blade imbalance** → energy concentrates at 1× rotor frequency (5 Hz at 300 RPM)
-- **Bearing wear** → Ball Pass Frequency Outer (BPFO ~83 Hz) and inner race (BPFI ~117 Hz) tones appear along with random impulses from spalling
+- **Bearing wear** → BPFO (~83 Hz) and BPFI (~117 Hz) tones appear with random impulses from spalling
 - **Misalignment** → 2× and 3× shaft frequency components (44 Hz, 66 Hz) dominate
 
-This is exactly the approach used in industrial Condition Monitoring Systems (CMS) on utility-scale wind turbines.
+This mirrors the approach used in industrial Condition Monitoring Systems (CMS) on utility-scale wind turbines like those manufactured by Nordex.
 
 ### Hardware Mapping (Real Deployment)
+
 | Component | Specification |
 |---|---|
 | Sensor | ADXL345 3-axis accelerometer |
@@ -158,23 +146,7 @@ This is exactly the approach used in industrial Condition Monitoring Systems (CM
 
 ---
 
-## Requirements
-
-```
-numpy>=1.24
-scipy>=1.10
-pandas>=2.0
-scikit-learn>=1.3
-matplotlib>=3.7
-```
-
----
-
 ## Author
 
 **Ashwani Rawat**  
-B.Tech ECE (Data Science), SRM Institute of Science & Technology, Chennai  
 [GitHub](https://github.com/ashwanirawat113) | [LinkedIn](https://linkedin.com/in/ashwani-rawat25) | ashwanirawat625@gmail.com
-=======
-# wind-turbine-fault-detection
->>>>>>> 958ee34835ec37ccec0a55f730ef845e7a597544
