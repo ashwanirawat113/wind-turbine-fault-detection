@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Wind Turbine Blade Fault Detection System
 
 **Ashwani Rawat | B.Tech ECE | SRM Institute of Science & Technology**  
@@ -174,3 +175,6 @@ matplotlib>=3.7
 **Ashwani Rawat**  
 B.Tech ECE (Data Science), SRM Institute of Science & Technology, Chennai  
 [GitHub](https://github.com/ashwanirawat113) | [LinkedIn](https://linkedin.com/in/ashwani-rawat25) | ashwanirawat625@gmail.com
+=======
+# wind-turbine-fault-detection
+>>>>>>> 958ee34835ec37ccec0a55f730ef845e7a597544
